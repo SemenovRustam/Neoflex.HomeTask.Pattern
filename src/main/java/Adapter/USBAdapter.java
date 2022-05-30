@@ -2,16 +2,16 @@ package Adapter;
 
 public class USBAdapter implements USB {
 
-    FlashCard flashCard;
+    MemoryCard memoryCard;
 
-    public USBAdapter(FlashCard flashCard) {
-        this.flashCard = flashCard;
+    public USBAdapter(MemoryCard memoryCard) {
+        this.memoryCard = memoryCard;
     }
 
     @Override
     public void readUSB() {
 
-        flashCard.readFlashCard();
-        System.out.println("FlashCard передает данные через адаптор.");
+        memoryCard.readMemoryCard();
+        System.out.println("Memory card передает данные через адаптор.");
     }
 }

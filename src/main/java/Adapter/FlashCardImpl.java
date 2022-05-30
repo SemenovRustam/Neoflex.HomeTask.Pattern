@@ -1,8 +1,8 @@
 package Adapter;
 
-public class FlashCardImpl implements FlashCard{
+public class FlashCardImpl implements MemoryCard {
     @Override
-    public void readFlashCard() {
-        System.out.println("flashCard передает данные компьютеру");
+    public void readMemoryCard() {
+        System.out.println("Memory card передает данные компьютеру");
     }
 }
